@@ -90,9 +90,7 @@ nav a:hover {
 
 @media screen and (max-width:600px) {
   nav {
-    flex-direction: column;
-    align-items: flex-end;
-    left: 100%;
+    display: none;
   }
 }
 
@@ -343,6 +341,12 @@ h1 span:nth-child(6n) {
   opacity: 1;
 }
 
+@media screen and (max-width:600px) {
+  #gallery {
+  margin:1%;
+ }
+}
+
 
 
 /* project pages */
@@ -399,7 +403,31 @@ h1 span:nth-child(6n) {
   width: 43%;
   margin: 25px;
   border-radius: 10px;
+}
 
+@media screen and (max-width:600px) {
+.project-images {
+  width: 90%;
+  }
+
+  .project-container {
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+  }
+
+  .project-text {
+    font-size: 18px;
+    margin-bottom: 10%;
+  }
+  #back {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 4%;
+  }
+  #back img {
+    width: 6%;
+    height: auto;
+  }
 }
 
 .button {
@@ -451,21 +479,40 @@ h1 span:nth-child(6n) {
 
 #about-paragraph h3 {
   font-size: 50px;
-
 }
-
 
 #about-photo {
   margin-top: 10%;
-
 }
 
 #about-photo img {
   width: 36%;
   border-radius: 15px;
   margin-left: 14%;
+}
 
+@media screen and (max-width:600px) {
+   #about-container {
+    display: flex;
+    flex-direction: column;
+    padding-right:10%;
+  }
 
+  #about-paragraph {
+    font-size: 18px;
+    padding-right: 10%;
+  }
+
+  #about-photo {
+    width: 200%;
+    margin-left: 50%;
+  }
+
+  .title {
+    margin-top: 30%;
+    padding-left: 0px;
+    text-align: center;
+  }
 }
 
 /* toolbar */
@@ -502,6 +549,13 @@ h1 span:nth-child(6n) {
   margin-top: 5px;
 }
 
+@media screen and (max-width:600px) {
+  #skills-container {
+   margin: 20px;
+   display: flex;
+   justify-content: space-evenly;
+ }
+}
 
 
 /* contact section */
@@ -607,8 +661,30 @@ input[type="submit"]:focus {
   transform: scale(1.08);
 }
 
+@media screen and (max-width:600px) {
+  #info-container {
+   margin: 15%;
+   position: relative;
+ }
+
+ #contact-text {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contactGridContainer {
+  display: grid;
+  margin-left: 15%;
+}
+
+form {
+  width: 80%;
+}
+}
+
 footer {
-  color: rgba(255, 132, 218, 0.452);
+  color: rgba(255, 132, 218, 0.651);
   border-radius: 8px;
   margin-top: 180px;
 
