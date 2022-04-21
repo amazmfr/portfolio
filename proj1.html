@@ -8,6 +8,7 @@
     <title>MACRO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <script src="script.js"></script>
 
 </head>
 
@@ -40,8 +41,12 @@
         </div>
 
 
-        <!-- <button class="button button1">Click to view full PDF</button>  -->
+     <button class="button" onclick="showHidePdf()">Click to view full PDF</button> 
 
+     <div id="pdf" style="display:none">
+        <iframe src="assets/MACRO/CatalogoSpread.pdf" width="90%" height="900">
+        </iframe>
+    </div>
 
 
 </body>

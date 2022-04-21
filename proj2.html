@@ -8,6 +8,8 @@
   <title>Caseroo</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+  <script src="script.js"></script>
+
 
 
 </head>
@@ -39,11 +41,14 @@
       <img class="project-images" src="assets/Caseroo/5.png">
       <img class="project-images" src="assets/Caseroo/6.png">
       <img class="project-images" src="assets/Caseroo/7.png">
-
-
     </div>
 
+    <button class="button" onclick="showHidePdf()">Click to view full PDF</button> 
 
+    <div id="pdf" style="display:none">
+       <iframe src="assets/Caseroo/Caseroo.pdf" width="90%" height="900">
+       </iframe>
+   </div>
 </body>
 
 </html>

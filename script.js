@@ -16,3 +16,8 @@ $(".gallery ul li a").click(function() {
     }, 400);
 });
 
+function showHidePdf() {
+  let d = document.getElementById("pdf");
+  d.style.display = d.style.display === "none"
+                  ? "block" : "none"
+}
